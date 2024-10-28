@@ -1,0 +1,528 @@
+/*--------------------------------------------------------- 
+# Styles Généraux 
+---------------------------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --alpha: rgba(0, 0, 0, 0);
+    --black: #181818;
+    --mainColor: #e9e9e9;
+    --hoverColor: #ddd018;
+    --currentPage: #fff01f;
+    --title: 25px;
+    --desc: 14px;
+}
+
+@font-face {
+    font-family: 'desc';
+    src: url("../media/font/Garet-Book.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'text';
+    src: url("../media/font/JMH-Typewriter.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'title';
+    src: url("../media/font/JMH-Typewriter-dry-Bold.otf") format('opentype');
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--black);
+    color: var(--mainColor);
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-size: 40px;
+    text-align: center;
+    font-family: "title";
+}
+
+h1 {
+    font-family: "title";
+}
+
+p {
+    font-family: 'text';
+    font-size: 20px;
+}
+
+.separateur {
+    height: 5vmin;
+}
+
+/*---------------------------------------------------------- 
+# Section Navbar 
+----------------------------------------------------------*/ 
+
+.navbar__container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 3%;
+    background-image: linear-gradient(to bottom right, #494752, #1a1d27);
+}
+
+.nav-link {
+    font-family: 'title';
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--mainColor);
+    margin-right: 5%;
+}
+
+.nav-link:hover {
+    color: var(--hoverColor);
+    text-shadow: 2px 2px 15px var(--black);
+}
+
+.currentPage {
+    color: var(--currentPage);
+}
+
+/*---------------------------------------------------------- 
+# C A R R O U S E L
+----------------------------------------------------------*/ 
+
+.carrouselProjet {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 1.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionName {
+    margin-bottom: 2%;
+}
+
+.projets .swiper-wrapper {
+    text-align: center;
+    color: var(--bs-white);
+}
+
+.projets .swiper {
+    height: 80vh;
+    border-radius: 10px;
+}
+
+.projets .swiper-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50px;
+    border: 5px solid var(--bs-primary);
+}
+
+.projets .swiper-slide {
+    opacity: 0.5;
+}
+
+.projets .swiper-slide-active {
+    opacity: 1;
+}
+
+.projets .btn-next-back {
+    color: var(--bs-secondary);
+    width: 25px;
+    height: 25px;
+    opacity: 0.75;
+    transition: linear 0.5s transform;
+}
+
+.projets .swiper-button-prev:active {
+    transform: translate(-5px) rotate(-20deg) scale(1.1);
+}
+
+.projets .swiper-button-next:active {
+    transform: translate(5px) rotate(20deg) scale(1.1);
+}
+
+.projets .btn-next-back:hover {
+    opacity: 1;
+}
+
+.projets .btn-next-back:active{
+    opacity: 0.90;
+}
+
+.projets .btn-next-back::before {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: -1;
+    background-color: var(--bs-primary);
+    border-radius: 50px;
+    border: 1px solid var(--bs-secondary);
+}
+
+/*---------------------------------------------------------- 
+# A B O U T   M E
+----------------------------------------------------------*/ 
+.aboutMe {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 100%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+}
+
+.aboutMeContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.aboutMeImg {
+    background-image: url("../media/images/alexandreGervais.jpg");
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 80% 0%;
+}
+
+.aboutMeText {
+    width: 50%;
+}
+
+/*---------------------------------------------------------- 
+# C A T É G O R I E S
+----------------------------------------------------------*/ 
+.category__description {
+    text-align: center;
+    margin-top: 1%;
+}
+
+.category__projects {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.sectionNameContainer {
+    padding: 2%;
+}
+
+.category__container {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding: 1%;
+}
+
+.categoryButton {
+    width: 30%;
+    text-align: center;
+}
+
+.buttonProject {
+    padding: 3%;
+    width: 70%;
+    font-size: var(--desc);
+}
+
+.section-feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.triDProjects {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.UnityProjects, .WebProjects {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 35vh;
+    background-color: #1a1d27;
+    border: solid #000 5px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 4%;
+}
+
+.card__img {
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.card__text {
+    height: 40%;
+    text-align: center;
+    padding: 2%;
+    font-family: 'desc';
+    font-size: var(--desc);
+}
+
+button {
+    font-family: 'text';
+}
+
+/*---------------------------------------------------------- 
+# C A R D   B A C K G R O U N D
+----------------------------------------------------------*/ 
+.card__eruptionFatale {background-image: url("../media/images/eruptionFatale.png");}
+.card__portalSides {background-image: url("../media/images/portalSides.jpg");}
+.card__pixarBanana {background-image: url("../media/images/pixarBanana.jpg");}
+.card__forgeMedievale {background-image: url("../media/images/forgeMedievale.jpg");}
+.card__scopophobia {background-image: url("../media/images/scopophobia.png");}
+.card__queteRichesse {background-image: url("../media/images/queteRichesses.jpg");}
+.card__voyageUnique {background-image: url("../media/images/");}
+.card__ghostlyBusiness {background-image: url("../media/images/ghostlyBusiness.jpg");}
+
+
+/*---------------------------------------------------------- 
+# P R O J E C T S
+----------------------------------------------------------*/
+.project__project__container {
+    display: flex;
+    padding: 3%;
+}
+
+hr {
+    border: solid 1px var(--mainColor);
+    width: 60%;
+}
+
+.container__project__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.project__media__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.project__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project__title {
+    font-size: var(--title);
+}
+
+.project__img, .project__img2, .project__img3, .project__img4, .project__img5 {
+    width: 100%;
+    padding: 2%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.project__desc, .project__desc2, .project__desc3, .project__desc4 {
+    font-size: var(--desc);
+    font-family: "desc";
+    text-align: center;
+    padding: 2%;
+}
+
+.project__frame {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/*---------------------------------------------------------- 
+# Section Footer 
+----------------------------------------------------------*/
+
+footer {
+    max-height: 16rem;
+    width: 100%;
+    padding: 2%;
+}
+
+.footerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footerGitAccount, .footerGitRepo {
+    width: 30%;
+    display: inline-block;
+    font-size: var(--text);
+    font-family: 'text';
+}
+
+.footerGitRepo {
+    text-align: right;
+}
+
+p.lien-git {
+    color: var(--bs-white);
+    font-size: var(--text);
+    text-decoration: none;
+}
+
+@media screen and (min-width: 800px) {
+    .buttonProject {
+        font-size: var(--text);
+        width: 50%;
+    }
+
+    .triDProjects {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .UnityProjects, .WebProjects {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: 35vh;
+        background-color: #1a1d27;
+        border: solid #000 5px;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-bottom: 4%;
+    }
+    
+    .card__img {
+        width: 100%;
+        height: 60%;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    
+    .card__text {
+        height: 40%;
+        text-align: center;
+        padding: 2%;
+        font-family: 'desc';
+        font-size: var(--desc);
+    }
+
+    .project__desc, .project__desc2, .project__desc3, .project__desc4 {
+        font-size: var(--text);
+    }
+
+    .container__project__container {
+        display: flex;
+        justify-content: center;
+        width: 75%;
+    }
+
+    hr {
+        border: solid 1px var(--mainColor);
+        width: 40%;
+    }
+
+    .footerGitAccount, .footerGitRepo {
+        width: 30%;
+        display: inline-block;
+        font-size: var(--title);
+        font-family: 'text';
+    }
+
+    p.lien-git {
+        color: var(--bs-white);
+        font-size: var(--title);
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .UnityProjects, .WebProjects {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .triDProjects {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        height: 30vh;
+        background-color: #1a1d27;
+        border: solid #000 5px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .card__img {
+        width: 100%;
+        height: 70%;
+        background-size: cover;
+        background-position: 50% 0;
+    }
+    .card__text {
+        height: 30%;
+        text-align: center;
+        padding: 2%;
+    }
+
+    .container__project__container {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+
+    hr {
+        border: solid 1px var(--mainColor);
+        width: 20%;
+    }
+}
+
+.hidden {
+    display: none;
+}

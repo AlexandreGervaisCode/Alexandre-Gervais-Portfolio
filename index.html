@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Alexandre Gervais">
+    <title>Alexandre Gervais - Portolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- N A V B A R -->
+    <header>
+        <nav class="navbar__container">
+            <a href="./index.html" class="nav-link currentPage">Accueil</a>
+            <a href="./pages/links.html" class="nav-link">À Propos</a>
+        </nav>
+    </header>
+    <!-- C A R R O U S E L -->
+    <section class="carrouselProjet" id="projets">
+        <div class="container main-container">
+            <div class="projets">
+                <div class="sectionName">
+                    <h1 class="title">Projets mis de l'avant</h1>
+                </div>
+
+                <div class="carrouselContainer">
+                    <div class="swiper swiper-screenshots">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./assets/media/images/forgeMedievale.jpg" alt="Forge Médievale" class="project forgeMedievale"></div>
+                            <div class="swiper-slide"><img src="./assets/media/images/eruptionFatale.png" alt="Eruption Fatale" class="project eruptionFatale"></div>
+                            <div class="swiper-slide"><img src="./assets/media/images/scopophobia.png" alt="Scopophobia" class="project scopophobia"></div>
+                        </div>
+                        <div class="btn-next-back swiper-button-next p-3 me-4"></div>
+                        <div class="btn-next-back swiper-button-prev p-3 ms-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À   P R O P O S -->
+    <section class="aboutMe">
+        <div class="aboutMeContainer">
+            <div class="aboutMeImg"></div>
+            <div class="aboutMeText">
+                <h1>Alexandre Gervais</h1>
+                <p>I do things. Like your mum lmao</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- C A T É G O R I E S -->
+    <section class="categoryProject">
+        <div class="categorySectionContainer">
+            <div class="section-feature">
+                <div class="sectionNameContainer">
+                    <h1 class="title">Types de projets</h1>
+                    <p class="category__description">
+                        Consultez mes projets visés vers un domaine en spécifique.
+                    </p>
+                </div>
+
+                <div class="category__container">
+                    <div class="categoryButton 3d"><button id="3DButton" class="buttonProject">3D</button></div>
+                    <div class="categoryButton unity"><button id="UnityButton" class="buttonProject">Unity</button></div>
+                    <div class="categoryButton web"><button id="WebButton" class="buttonProject">Web</button></div>
+                </div>
+                <div class="category__projects">
+                    <div class="triDProjects hidden">
+                        <div class="card eruptionFatale project">
+                            <div class="card__img card__eruptionFatale"></div>
+                            <div class="card__text">Une animation 3D d'une île volcanique et un gagnant du concours "Essaies Audiovisuels".</div>
+                        </div>
+                        <div class="card portalSides project">
+                            <div class="card__img card__portalSides"></div>
+                            <div class="card__text">Une courte animation 3D qui a de l'animation générative inspirée par la série de jeux vidéo "Portal".</div>
+                        </div>
+                        <div class="card pixarBanana project">
+                            <div class="card__img card__pixarBanana"></div>
+                            <div class="card__text">Une courte animation 3D qui essaye de reproduire l'animation iconique de Pixar en utilisant une banane dans une jungle.</div>
+                        </div>
+                        <div class="card forgeMedievale project">
+                            <div class="card__img card__forgeMedievale"></div>
+                            <div class="card__text">La modélisation d'une scène 3D en équipe pour faire une forge médievale dans un style visuel réalistique.</div>
+                        </div>
+                    </div>
+                    <div class="UnityProjects hidden">
+                        <div class="card scopophobia project">
+                            <div class="card__img card__scopophobia"></div>
+                            <div class="card__text">Un court jeu exploratif d'horreur fait à partir de Unity qui possède une ambiance incertaine et liminale.</div>
+                        </div>
+                        <div class="card queteRichesse project">
+                            <div class="card__img card__queteRichesse"></div>
+                            <div class="card__text">Une application de Réalité Augementée (AR) pour Android. Permet de trouver du trésor avec une image d'une carte de pirate.</div>
+                        </div>
+                    </div>
+                    <div class="WebProjects hidden">
+                        <div class="card voyageUnique project">
+                            <div class="card__img card__voyageUnique"></div>
+                            <div class="card__text">Une histoire visuelle réalisée, animée et programmée en JavaScript avec les librairies GSAP.</div>
+                        </div>
+                        <div class="card ghostlyBusiness project">
+                            <div class="card__img card__ghostlyBusiness"></div>
+                            <div class="card__text">Un jeu web qui consiste à progresser l'histoire et franchir les problèmes rencontrés avec des choix de décisions.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- F O O T E R -->
+    <div class="barre-color-footer"></div>
+    <footer>
+        <div class="footerContainer">
+            <div class="footerGitAccount">
+                <p class="lien-git">Alexandre Gervais</p>
+            </div>
+            <div class="footerGitRepo">
+                <a class="lien-git" href="https://github.com/Marexillius/portfolio" target="_blank">GitHub du
+                    Portfolio</a>
+            </div>
+        </div>
+    </footer>
+    <!-- S C R I P T S -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
