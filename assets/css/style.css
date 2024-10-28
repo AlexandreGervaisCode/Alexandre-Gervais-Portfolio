@@ -67,10 +67,9 @@ p {
 
 .navbar__container {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    flex-wrap: wrap;
     padding: 3%;
     background-image: linear-gradient(to bottom right, #494752, #1a1d27);
 }
@@ -80,7 +79,6 @@ p {
     font-size: 1.2em;
     font-weight: 700;
     color: var(--mainColor);
-    margin-right: 5%;
 }
 
 .nav-link:hover {
@@ -90,6 +88,12 @@ p {
 
 .currentPage {
     color: var(--currentPage);
+}
+
+.navLinkContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
 }
 
 /*---------------------------------------------------------- 
@@ -115,7 +119,7 @@ p {
 }
 
 .projets .swiper {
-    height: 80vh;
+    height: 70vh;
     border-radius: 10px;
 }
 
@@ -188,7 +192,7 @@ p {
 
 .aboutMeContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
     height: 100%;
     width: 100%;
@@ -196,14 +200,22 @@ p {
 
 .aboutMeImg {
     background-image: url("../media/images/alexandreGervais.jpg");
-    width: 50%;
+    width: 48%;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 80% 0%;
 }
 
 .aboutMeText {
-    width: 50%;
+    width: 48%;
+}
+
+.aboutMeTitle {
+    font-size: var(--title);
+}
+
+.aboutMeDesc {
+    font-size: var(--text);
 }
 
 /*---------------------------------------------------------- 
@@ -240,6 +252,7 @@ p {
     padding: 3%;
     width: 70%;
     font-size: var(--desc);
+    background-color: var(--mainColor);
 }
 
 .section-feature {
@@ -393,12 +406,17 @@ footer {
 }
 
 p.lien-git {
-    color: var(--bs-white);
+    color: var(--mainColor);
     font-size: var(--text);
     text-decoration: none;
 }
 
 @media screen and (min-width: 800px) {
+    .navLinkContainer {
+        display: flex;
+        justify-content: space-between;
+        width: 25%;
+    }
     .buttonProject {
         font-size: var(--text);
         width: 50%;
@@ -476,6 +494,15 @@ p.lien-git {
 }
 
 @media screen and (min-width: 1500px) {
+    .projets .swiper {
+        height: 90vh;
+        border-radius: 10px;
+    }
+    .navLinkContainer {
+        display: flex;
+        justify-content: space-between;
+        width: 15%;
+    }
     .UnityProjects, .WebProjects {
         width: 50%;
         display: flex;
