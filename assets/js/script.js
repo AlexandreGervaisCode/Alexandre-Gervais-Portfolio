@@ -25,10 +25,11 @@ let swiper = new Swiper(".swiper-screenshots", {
   },
 });
 
+// Object that has every project info
 const projectObj = {
   forgeMedievale: {
     titre: `Forge Médiévale - 3D`,
-    description: `Terminé le 15 Novembre 2023, Ceci est une scène 3D qui vise à reproduire un style réalistique sur un lieu du passé. Réalisé dans le cadre du cours "Modélisation 3D" par Alexandre Gervais, Ian Corbin, Samuel Desmeules-Voyer et Keven Malric, chaque membre de l'équipe ont produit au moins 3 éléments 3D uniques à la scène. Ce projet à été réalisé avec AutoDesk Maya et Arnold.`,
+    description: `Terminé le 15 Novembre 2023, Ceci est une scène 3D qui vise à reproduire un style réalistique sur un lieu du passé.<br>Réalisé dans le cadre du cours "Modélisation 3D" par Alexandre Gervais, Ian Corbin, Samuel Desmeules-Voyer et Keven Malric, chaque membre de l'équipe ont produit au moins 3 éléments 3D uniques à la scène. Ce projet à été réalisé avec AutoDesk Maya et Arnold.`,
     image: "../assets/media/images/forgeMedievale.jpg",
     description2: `Tout d'abord, notre équipe à commencée avec discuter à propos d'un environnement 3D qui serait intéressant, unique et réalistique. Le thème qu'on a choisi était une forge des temps médievaux. Pour avoir une idée des objets qu'on allait devoir modéliser et d'avoir un aperçu de référence du produit final, j'ai fait cette esquisse ci-dessous.`,
     image2: "../assets/media/images/forgeMedievaleEsquisse.jpg",
@@ -41,7 +42,7 @@ const projectObj = {
   },
   eruptionFatale: {
     titre: `Éruption Fatale - 3D, Sonore`,
-    description: `Terminé le 5 Mai 2024, Éruption Fatale est un environnement fantastique d'une plage déserte qui est sur une île volcanique qui s'apprête à entrer en éruption réalisé dans le cadre des cours "Animation 3D" et "Conception Sonore Interactive". Ceci est le gagnant du Prix "Coup de Coeur" du concours "Essais Audiovisuels" 2024. Ce projet dans le style low poly à été entièrement conceptualisé, modelé, animé et monté par moi, incluant la production des pistes sonores. Le but de ce projet était d'essayer quelque chose de différent que le style réalistique qui devient plus typique. Ce projet à été réalisé avec Autodesk Maya et Arnold, Reaper et DaVinci.`,
+    description: `Terminé le 5 Mai 2024, Éruption Fatale est un environnement fantastique d'une plage déserte qui est sur une île volcanique qui s'apprête à entrer en éruption réalisé dans le cadre des cours "Animation 3D" et "Conception Sonore Interactive".<br><br>Ceci est le <b>gagnant</b> du Prix "Coup de Coeur" du concours "Essais Audiovisuels" 2024.<br><br>Ce projet dans le style low poly à été entièrement conceptualisé, modelé, animé et monté par moi, incluant la production des pistes sonores. Le but de ce projet était d'essayer quelque chose de différent que le style réalistique qui devient plus typique. Ce projet à été réalisé avec Autodesk Maya et Arnold, Reaper et DaVinci.`,
     image: false,
     description2: false,
     description3: false,
@@ -54,7 +55,7 @@ const projectObj = {
   },
   scopophobia: {
     titre: `Scopophobia - Jeu Unity`,
-    description: `Terminé le 15 Octobre 2024, Scopophobia est un court jeu qui possède une ambiance horrifique et inquiétante réalisé dans le cadre du cours "Réalité Virtuelle". Le but est de trouver et collecter tout les os dans cet environnement urbain nocturnal grâce à votre lampe de poche. La conceptualisation, la programmation, la stucture de l'environnement et la population de cet environnement ont été réalisés par moi. Les modèles 3D sont pris d'un pack d'assets offert aux comptes étudiants par Unity et les sources audio proviennent de Pixabay.`,
+    description: `Terminé le 15 Octobre 2024, Scopophobia est un court jeu qui possède une ambiance horrifique et inquiétante réalisé dans le cadre du cours "Réalité Virtuelle". Le but est de trouver et collecter tout les os dans cet environnement urbain nocturnal grâce à votre lampe de poche.<br><br>La conceptualisation, la programmation, la stucture de l'environnement et la population de cet environnement ont été réalisés par moi. Les modèles 3D sont pris d'un pack d'assets offert aux comptes étudiants par Unity et les sources audio proviennent de Pixabay.`,
     image: false,
     description2: false,
     description3: false,
@@ -67,7 +68,7 @@ const projectObj = {
   },
   queteRichesse: {
     titre: `Quête des Richesses - AR Unity`,
-    description: `Terminé le 24 Septembre 2024, Quête des Richesses est une application mobile de Réalité Augmentée (AR) pour Android qui permet, avec la caméra du téléphone, du faire apparaître un coffre au trésor et une pièce d'or quand une carte de pirate est capté par la caméra. La conceptualisation, la réalisation, la production des médias visuels et sonores et la programmation ont été réalisés par moi dans le cadre du cours "Réalité Virtuelle". Ce projet à été réalisé avec Unity.`,
+    description: `Terminé le 24 Septembre 2024, Quête des Richesses est une application mobile de Réalité Augmentée (AR) pour Android qui permet, avec la caméra du téléphone, du faire apparaître un coffre au trésor et une pièce d'or quand une carte de pirate est capté par la caméra.<br><br>La conceptualisation, la réalisation, la production des médias visuels et sonores et la programmation ont été réalisés par moi dans le cadre du cours "Réalité Virtuelle". Ce projet à été réalisé avec Unity.`,
     image: "../assets/media/images/queteRichesses.jpg",
     image2: "../assets/media/images/queteRichesse2.jpg",
     description2: false,
@@ -80,7 +81,7 @@ const projectObj = {
   },
   ghostlyBusiness: {
     titre: `Ghostly Business - Web`,
-    description: `Terminé le 4 Décembre 2023, Ghostly Business est un jeu web qui consiste à devoir prendre des décisions face à un problème présenté. Ce projet fut conceptualisé, réalisé et programmé dans en JavaScript dans le cadre du cours "Développement Web". Les médias visuels ont été assemblés par moi, mais pas réalisés.`,
+    description: `Terminé le 4 Décembre 2023, Ghostly Business est un jeu web qui consiste à devoir prendre des décisions face à un problème présenté.<br><br>Ce projet fut conceptualisé, réalisé et programmé dans en JavaScript dans le cadre du cours "Développement Web". Les médias visuels ont été assemblés par moi, mais pas réalisés.`,
     image: false,
     description2: false,
     description3: false,
@@ -93,7 +94,7 @@ const projectObj = {
   },
   voyageUnique: {
     titre: `Voyage Unique - Web`,
-    description: `Terminé le 13 Mai 2024, Voyage Unique est une histoire "Scrollytelling" web affiché avec des animations programmés en JavaScript à l'aide des librairies GSAP. La conceptualisation, programmation, réalisation des médias et la production ont été réalisées dans le cadre du cours "Optimisation Web" par moi.`,
+    description: `Terminé le 13 Mai 2024, Voyage Unique est une histoire "Scrollytelling" web affiché avec des animations programmés en JavaScript à l'aide des librairies GSAP.<br><br>La conceptualisation, programmation, réalisation des médias et la production ont été réalisées dans le cadre du cours "Optimisation Web" par moi.`,
     image: false,
     description2: false,
     description3: false,
@@ -106,7 +107,7 @@ const projectObj = {
   },
   pixarBanana: {
     titre: `Banane Pixar - 3D`,
-    description: `Terminé le 19 Février 2024, Pixar Banana est une courte animation réalisée avec une piste audio pré-existante dans le cadre du cours "Animation 3D". La population de l'environnement, l'animation, et la création de la banane et les lettre ont été réalisés par moi. Ce projet à été réalisé avec AutoDesk Maya et Arnold.`,
+    description: `Terminé le 19 Février 2024, Pixar Banana est une courte animation réalisée avec une piste audio pré-existante dans le cadre du cours "Animation 3D".<br><br>La population de l'environnement, l'animation, et la création de la banane et les lettre ont été réalisés par moi. Ce projet à été réalisé avec AutoDesk Maya et Arnold.`,
     image: false,
     description2: false,
     description3: false,
@@ -119,7 +120,7 @@ const projectObj = {
   },
   portalSides: {
     titre: `Portal Sides - 3D`,
-    description: `Terminé le 5 Mars 2024, Portal Sides est une courte animation inspirée par le jeu vidéo "Portal". L'animation nous amène dans 2 côtés différents de des portails qui ont une petite animation générative. La réalisation, production et conceptualisation ont été réalisées dans le cadre du cours "Animation 3D" par moi. Ce projet à été réalisé avec AutoDesk Maya et Arnold.`,
+    description: `Terminé le 5 Mars 2024, Portal Sides est une courte animation inspirée par le jeu vidéo "Portal". L'animation nous amène dans 2 côtés différents de des portails qui ont une petite animation générative.<br><br>La réalisation, production et conceptualisation ont été réalisées dans le cadre du cours "Animation 3D" par moi. Ce projet à été réalisé avec AutoDesk Maya et Arnold.`,
     image: false,
     description2: false,
     description3: false,
@@ -140,7 +141,7 @@ function loadProject(projectName) {
     window.location.href = "./pages/projects.html";
   }
 
-  /*HTML Elements*/
+  // HTML Elements
   let selectedProject = projectName;
   let projectTitle = document.querySelector(".project__title");
   let projectDesc = document.querySelector(".project__desc");
@@ -154,10 +155,18 @@ function loadProject(projectName) {
   let projectImg4 = document.querySelector(".project__img4");
   let projectImg5 = document.querySelector(".project__img5");
 
-  /* Give project info */
+  // Give project info
   projectTitle.textContent = selectedProject.titre;
-  projectDesc.textContent = selectedProject.description;
+  projectDesc.innerHTML = selectedProject.description;
 
+  // Check if it's not a frame video
+  if (selectedProject.titre === `Ghostly Business - Web`) {
+    projectFrame.classList.add("frameGame");
+  } else {
+    projectFrame.classList.remove("frameGame");
+  }
+
+  // Adds the info if the project has it
   if (selectedProject.image !== false) {
     projectImg.src = selectedProject.image;
     projectImg.classList.remove('hidden');
@@ -177,19 +186,19 @@ function loadProject(projectName) {
     projectImg3.classList.add('hidden');
   }
   if (selectedProject.description2 !== false) {
-    projectDesc2.textContent = selectedProject.description2;
+    projectDesc2.innerHTML = selectedProject.description2;
     projectDesc2.classList.remove('hidden');
   } else {
     projectDesc2.classList.add('hidden');
   }
   if (selectedProject.description3 !== false) {
-    projectDesc3.textContent = selectedProject.description3;
+    projectDesc3.innerHTML = selectedProject.description3;
     projectDesc3.classList.remove('hidden');
   } else {
     projectDesc3.classList.add('hidden');
   }
   if (selectedProject.description4 !== false) {
-    projectDesc4.textContent = selectedProject.description4;
+    projectDesc4.innerHTML = selectedProject.description4;
     projectDesc4.classList.remove('hidden');
   } else {
     projectDesc4.classList.add('hidden');
@@ -215,6 +224,7 @@ function loadProject(projectName) {
   
 }
 
+// Get all project, then assigns the matching object 
 const allProjects = document.querySelectorAll(".project");
 const projectArr = ["forgeMedievale", "eruptionFatale", "scopophobia", "queteRichesse", "ghostlyBusiness", "voyageUnique", "pixarBanana", "portalSides"];
 
@@ -229,25 +239,26 @@ allProjects.forEach(element => {
   })
 });
 
+// Makes the button to check projects work
 const allButtonCategory = document.querySelectorAll(".categoryButton");
 const tridimensionProjects = document.querySelector(".triDProjects");
 const unityProjects = document.querySelector(".UnityProjects");
 const webProjects = document.querySelector(".WebProjects");
 allButtonCategory.forEach(category => {
   category.addEventListener("click", function () {
-    /* 3 D */
+    // 3 D
     if (category.classList.contains("3d")) {
       tridimensionProjects.classList.remove("hidden");
       unityProjects.classList.add("hidden");
       webProjects.classList.add("hidden");
     } 
-    /* U N I T Y */
+    // U N I T Y
     else if (category.classList.contains("unity")) {
       tridimensionProjects.classList.add("hidden");
       unityProjects.classList.remove("hidden");
       webProjects.classList.add("hidden");
     } 
-    /* W E B */
+    // W E B
     else if (category.classList.contains("web")) {
       tridimensionProjects.classList.add("hidden");
       unityProjects.classList.add("hidden");
@@ -260,7 +271,7 @@ let projectClicked = localStorage.getItem("projectClicked");
 let projectSelected = localStorage.getItem("projectSelected");
 console.log(htmlPage);
 
-/* CHECKING EACH PROJECT TO TURN BACK THE LOCALSTORAGE INTO ITEM*/
+// CHECKING EACH PROJECT TO TURN BACK THE LOCALSTORAGE INTO ITEM
 switch(projectClicked) {
   case "forgeMedievale":
     projectSelected = projectObj.forgeMedievale;

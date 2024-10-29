@@ -187,7 +187,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50vh;
+    height: 45vh;
 }
 
 .aboutMeContainer {
@@ -195,27 +195,31 @@ p {
     justify-content: space-between;
     flex-direction: row;
     height: 100%;
-    width: 100%;
+    width: 60%;
+    padding: 0.5%;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .aboutMeImg {
     background-image: url("../media/images/alexandreGervais.jpg");
     width: 48%;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 80% 0%;
+    background-size: cover;
+    background-position: 50% 3%;
 }
 
 .aboutMeText {
     width: 48%;
+    padding: 0.5%;
 }
 
 .aboutMeTitle {
-    font-size: var(--title);
+    font-size: var(--text);
 }
 
 .aboutMeDesc {
-    font-size: var(--text);
+    font-size: var(--desc);
 }
 
 /*---------------------------------------------------------- 
@@ -326,6 +330,7 @@ button {
 ----------------------------------------------------------*/
 .project__project__container {
     display: flex;
+    justify-content: center;
     padding: 3%;
 }
 
@@ -335,9 +340,9 @@ hr {
 }
 
 .container__project__container {
+    width: 100%;
     display: flex;
     justify-content: center;
-    width: 100%;
 }
 
 .project__media__container {
@@ -374,6 +379,11 @@ hr {
     aspect-ratio: 16 / 9;
     border-radius: 20px;
     overflow: hidden;
+}
+
+.frameGame {
+    height: 80vh;
+    aspect-ratio: 16 / 9;
 }
 
 /*---------------------------------------------------------- 
@@ -422,6 +432,14 @@ p.lien-git {
         width: 50%;
     }
 
+    .aboutMeTitle {
+        font-size: var(--title);
+    }
+    
+    .aboutMeDesc {
+        font-size: var(--text);
+    }
+
     .triDProjects {
         width: 70%;
         display: flex;
@@ -468,10 +486,9 @@ p.lien-git {
         font-size: var(--text);
     }
 
-    .container__project__container {
-        display: flex;
-        justify-content: center;
+    .project__media__container {
         width: 75%;
+
     }
 
     hr {
@@ -538,9 +555,7 @@ p.lien-git {
         padding: 2%;
     }
 
-    .container__project__container {
-        display: flex;
-        justify-content: center;
+    .project__media__container {
         width: 50%;
     }
 
