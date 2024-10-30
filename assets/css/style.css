@@ -198,6 +198,15 @@ b {
     font-family: "title";
 }
 
+.swiper__project {
+    transform: scale(1);
+    transition-duration: 1s;
+}
+
+.swiper__project:hover {
+    transform: scale(1.2);
+}
+
 .news__text {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5) 50%, rgba(255, 255, 255, 0));
 }
