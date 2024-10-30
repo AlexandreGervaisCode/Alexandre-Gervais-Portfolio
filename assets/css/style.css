@@ -10,9 +10,15 @@
 :root {
     --alpha: rgba(0, 0, 0, 0);
     --black: #181818;
-    --mainColor: #e9e9e9;
-    --hoverColor: #ddd018;
-    --currentPage: #fff01f;
+    --pureBlack: #000;
+    --mainColor: #c53c3c;
+    --mainColorHover: #e26464;
+    --mainColorCard: #640e0e;
+    --hoverColor: #eed43f;
+    --white: #f0f0f0;
+    --currentPage: #e6c92a;
+    --link: #6060f5;
+    --hoverLink: #7979f7;
     --title: 25px;
     --desc: 14px;
 }
@@ -35,11 +41,18 @@
 body {
     overflow-x: hidden;
     background-color: var(--black);
-    color: var(--mainColor);
+    color: var(--white);
+    min-width: 575px;
 }
 
 a {
     text-decoration: none;
+    color: var(--link);
+}
+
+a:hover {
+    color: var(--hoverLink);
+    text-shadow: 0px 0px 10px var(--link);
 }
 
 .title {
@@ -57,6 +70,10 @@ p {
     font-size: 20px;
 }
 
+b {
+    color: var(--currentPage);
+}
+
 .separateur {
     height: 5vmin;
 }
@@ -71,19 +88,19 @@ p {
     align-items: center;
     width: 100%;
     padding: 3%;
-    background-image: linear-gradient(to bottom right, #494752, #1a1d27);
+    background-image: linear-gradient(to bottom right, #b32f2f, #991818);
 }
 
 .nav-link {
     font-family: 'title';
     font-size: 1.2em;
     font-weight: 700;
-    color: var(--mainColor);
+    color: var(--white);
 }
 
 .nav-link:hover {
     color: var(--hoverColor);
-    text-shadow: 2px 2px 15px var(--black);
+    text-shadow: 0px 0px 15px var(--black);
 }
 
 .currentPage {
@@ -115,7 +132,6 @@ p {
 
 .projets .swiper-wrapper {
     text-align: center;
-    color: var(--bs-white);
 }
 
 .projets .swiper {
@@ -129,7 +145,6 @@ p {
     object-fit: cover;
     object-position: center top;
     border-radius: 50px;
-    border: 5px solid var(--bs-primary);
 }
 
 .projets .swiper-slide {
@@ -141,7 +156,6 @@ p {
 }
 
 .projets .btn-next-back {
-    color: var(--bs-secondary);
     width: 25px;
     height: 25px;
     opacity: 0.75;
@@ -171,9 +185,21 @@ p {
     height: 100px;
     position: absolute;
     z-index: -1;
-    background-color: var(--bs-primary);
     border-radius: 50px;
-    border: 1px solid var(--bs-secondary);
+}
+
+.news__swiper__text {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: var(--title);
+    font-family: "title";
+}
+
+.news__text {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5) 50%, rgba(255, 255, 255, 0));
 }
 
 /*---------------------------------------------------------- 
@@ -196,9 +222,10 @@ p {
     flex-direction: row;
     height: 100%;
     width: 60%;
-    padding: 0.5%;
+    padding-right: 0.5%;
     border-radius: 10px;
     overflow: hidden;
+    background-color: #0a0a0a;
 }
 
 .aboutMeImg {
@@ -212,6 +239,7 @@ p {
 .aboutMeText {
     width: 48%;
     padding: 0.5%;
+    padding-top: 2%;
 }
 
 .aboutMeTitle {
@@ -286,8 +314,8 @@ p {
     align-items: center;
     width: 100%;
     height: 35vh;
-    background-color: #1a1d27;
-    border: solid #000 5px;
+    background-color: var(--mainColorCard);
+    border: solid var(--pureBlack) 5px;
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 4%;
@@ -309,7 +337,14 @@ p {
 }
 
 button {
-    font-family: 'text';
+    font-family: 'title';
+    background-color: var(--mainColor);
+    border-radius: 20px;
+    color: var(--white);
+}
+
+button:hover {
+    background-color: var(--mainColorHover);
 }
 
 /*---------------------------------------------------------- 
@@ -335,7 +370,7 @@ button {
 }
 
 hr {
-    border: solid 1px var(--mainColor);
+    border: solid 1px var(--white);
     width: 60%;
 }
 
@@ -387,9 +422,88 @@ hr {
 }
 
 /*---------------------------------------------------------- 
+# Section Contact
+----------------------------------------------------------*/
+.links {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.link__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+}
+
+.link__item {
+    width: 40%;
+    text-align: center;
+    font-size: var(--desc);
+    font-family: "title";
+    border: solid 3px var(--mainColor);
+    background-color: var(--mainColorHover);
+    color: var(--white);
+    border-radius: 20px;
+}
+
+.link__item:hover {
+    color: var(--white);
+    text-shadow: 0px 0px 10px var(--mainColor);
+}
+
+.contact__container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.contact__item__container {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact__item {
+    width: 40%;
+    text-align: center;
+    font-family: "text";
+    font-size: var(--desc);
+    color: var(--white);
+}
+
+.applications__container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.application__placer {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.app__item {
+    padding: 1.5%;
+    height: 15vw;
+    max-height: 100px;
+    background-color: var(--white);
+    margin: 1%;
+    border-radius: 20px;
+}
+
+.app__text {
+    text-align: center;
+    font-size: var(--title);
+    font-family: "title";
+}
+
+/*---------------------------------------------------------- 
 # Section Footer 
 ----------------------------------------------------------*/
-
 footer {
     max-height: 16rem;
     width: 100%;
@@ -405,7 +519,7 @@ footer {
 }
 
 .footerGitAccount, .footerGitRepo {
-    width: 30%;
+    width: 40%;
     display: inline-block;
     font-size: var(--text);
     font-family: 'text';
@@ -416,11 +530,14 @@ footer {
 }
 
 p.lien-git {
-    color: var(--mainColor);
+    color: var(--white);
     font-size: var(--text);
     text-decoration: none;
 }
 
+/*---------------------------------------------------------- 
+# Section MediaQuery tablette
+----------------------------------------------------------*/
 @media screen and (min-width: 800px) {
     .navLinkContainer {
         display: flex;
@@ -460,10 +577,6 @@ p.lien-git {
         align-items: center;
         width: 80%;
         height: 35vh;
-        background-color: #1a1d27;
-        border: solid #000 5px;
-        border-radius: 20px;
-        overflow: hidden;
         margin-bottom: 4%;
     }
     
@@ -492,7 +605,7 @@ p.lien-git {
     }
 
     hr {
-        border: solid 1px var(--mainColor);
+        border: solid 1px var(--white);
         width: 40%;
     }
 
@@ -508,8 +621,22 @@ p.lien-git {
         font-size: var(--title);
         text-decoration: none;
     }
+
+    .contact__item {
+        font-size: var(--desc);
+        width: 40%;
+    }
 }
 
+@media screen and (min-width: 1100px) {
+    .contact__item {
+        font-size: var(--title);
+    }
+}
+
+/*---------------------------------------------------------- 
+# Section MediaQuery ordi
+----------------------------------------------------------*/
 @media screen and (min-width: 1500px) {
     .projets .swiper {
         height: 90vh;
@@ -538,10 +665,6 @@ p.lien-git {
         align-items: center;
         width: 40%;
         height: 30vh;
-        background-color: #1a1d27;
-        border: solid #000 5px;
-        border-radius: 20px;
-        overflow: hidden;
     }
     .card__img {
         width: 100%;
@@ -560,8 +683,20 @@ p.lien-git {
     }
 
     hr {
-        border: solid 1px var(--mainColor);
+        border: solid 1px var(--white);
         width: 20%;
+    }
+
+    .link__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 60%;
+    }
+
+    .link__item {
+        width: 30%;
+        font-size: var(--title);
     }
 }
 
