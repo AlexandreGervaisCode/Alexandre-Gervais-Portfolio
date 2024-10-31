@@ -42,7 +42,6 @@ body {
     overflow-x: hidden;
     background-color: var(--black);
     color: var(--white);
-    min-width: 575px;
 }
 
 a {
