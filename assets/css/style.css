@@ -38,6 +38,10 @@
     src: url("../media/font/JMH-Typewriter-dry-Bold.otf") format('opentype');
 }
 
+html {
+    min-width: 200px;
+}
+
 body {
     overflow-x: hidden;
     background-color: var(--black);
