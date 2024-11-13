@@ -19,8 +19,8 @@
     --currentPage: #e6c92a;
     --link: #6060f5;
     --hoverLink: #7979f7;
-    --title: 25px;
-    --desc: 14px;
+    --title: 20px;
+    --desc: 12px;
 }
 
 @font-face {
@@ -83,7 +83,7 @@ b {
 
 /*---------------------------------------------------------- 
 # Section Navbar 
-----------------------------------------------------------*/ 
+----------------------------------------------------------*/
 
 .navbar__container {
     display: flex;
@@ -96,7 +96,7 @@ b {
 
 .nav-link {
     font-family: 'title';
-    font-size: 1.2em;
+    font-size: var(--desc);
     font-weight: 700;
     color: var(--white);
 }
@@ -104,6 +104,13 @@ b {
 .nav-link:hover {
     color: var(--hoverColor);
     text-shadow: 0px 0px 15px var(--black);
+}
+
+.alexandreGervais {
+    font-family: 'title';
+    font-size: var(--desc);
+    font-weight: 700;
+    color: var(--white);
 }
 
 .currentPage {
@@ -118,7 +125,7 @@ b {
 
 /*---------------------------------------------------------- 
 # C A R R O U S E L
-----------------------------------------------------------*/ 
+----------------------------------------------------------*/
 
 .carrouselProjet {
     margin-top: 3%;
@@ -177,7 +184,7 @@ b {
     opacity: 1;
 }
 
-.projets .btn-next-back:active{
+.projets .btn-next-back:active {
     opacity: 0.90;
 }
 
@@ -201,12 +208,12 @@ b {
     font-family: "title";
 }
 
-.swiper__project {
+.swiper > .swiper-wrapper > .swiper-slide > .swiper__project {
     transform: scale(1);
     transition-duration: 1s;
 }
 
-.swiper__project:hover {
+.swiper:hover > .swiper-wrapper > .swiper-slide > .swiper__project {
     transform: scale(1.2);
 }
 
@@ -216,7 +223,7 @@ b {
 
 /*---------------------------------------------------------- 
 # A B O U T   M E
-----------------------------------------------------------*/ 
+----------------------------------------------------------*/
 .aboutMe {
     margin-top: 3%;
     margin-bottom: 3%;
@@ -252,6 +259,7 @@ b {
     width: 48%;
     padding: 0.5%;
     padding-top: 2%;
+    line-height: 125%;
 }
 
 .aboutMeTitle {
@@ -264,7 +272,7 @@ b {
 
 /*---------------------------------------------------------- 
 # C A T É G O R I E S
-----------------------------------------------------------*/ 
+----------------------------------------------------------*/
 .category__description {
     text-align: center;
     margin-top: 1%;
@@ -283,7 +291,7 @@ b {
 .category__container {
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    width: 70%;
     padding: 1%;
 }
 
@@ -294,7 +302,7 @@ b {
 
 .buttonProject {
     padding: 3%;
-    width: 70%;
+    width: 80%;
     font-size: var(--desc);
     background-color: var(--mainColor);
 }
@@ -313,7 +321,8 @@ b {
     justify-content: center;
 }
 
-.UnityProjects, .WebProjects {
+.UnityProjects,
+.WebProjects {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
@@ -323,6 +332,7 @@ b {
 .card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 35vh;
@@ -331,17 +341,30 @@ b {
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 4%;
+    transition-duration: 1s;
 }
 
 .card__img {
     width: 100%;
-    height: 60%;
-    background-size: cover;
-    background-position: 50% 50%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card__img__child {
+    height: 100%;
+    aspect-ratio: 16/9;
+    transition-duration: 1s;
+}
+
+.card:hover>.card__img>.card__img__child {
+    transform: scale(1.2);
 }
 
 .card__text {
-    height: 40%;
+    height: 30%;
     text-align: center;
     padding: 2%;
     font-family: 'desc';
@@ -358,19 +381,6 @@ button {
 button:hover {
     background-color: var(--mainColorHover);
 }
-
-/*---------------------------------------------------------- 
-# C A R D   B A C K G R O U N D
-----------------------------------------------------------*/ 
-.card__eruptionFatale {background-image: url("../media/images/eruptionFatale.png");}
-.card__portalSides {background-image: url("../media/images/portalSides.jpg");}
-.card__pixarBanana {background-image: url("../media/images/pixarBanana.jpg");}
-.card__forgeMedievale {background-image: url("../media/images/forgeMedievale.jpg");}
-.card__scopophobia {background-image: url("../media/images/scopophobia.png");}
-.card__queteRichesse {background-image: url("../media/images/queteRichesses.jpg");}
-.card__voyageUnique {background-image: url("../media/images/voyageUnique.jpg");}
-.card__ghostlyBusiness {background-image: url("../media/images/ghostlyBusiness.jpg");}
-
 
 /*---------------------------------------------------------- 
 # P R O J E C T S
@@ -407,14 +417,22 @@ hr {
     font-size: var(--title);
 }
 
-.project__img, .project__img2, .project__img3, .project__img4, .project__img5 {
+.project__img,
+.project__img2,
+.project__img3,
+.project__img4,
+.project__img5,
+.project__moodboard {
     width: 100%;
     padding: 2%;
     border-radius: 20px;
     overflow: hidden;
 }
 
-.project__desc, .project__desc2, .project__desc3, .project__desc4 {
+.project__desc,
+.project__desc2,
+.project__desc3,
+.project__desc4 {
     font-size: var(--desc);
     font-family: "desc";
     text-align: center;
@@ -472,13 +490,13 @@ hr {
 }
 
 .contact__item__container {
-    width: 70%;
+    width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .contact__item {
-    width: 40%;
+    width: 50%;
     text-align: center;
     font-family: "text";
     font-size: var(--desc);
@@ -530,7 +548,8 @@ footer {
     flex-direction: row;
 }
 
-.footerGitAccount, .footerGitRepo {
+.footerGitAccount,
+.footerGitRepo {
     width: 40%;
     display: inline-block;
     font-size: var(--text);
@@ -548,6 +567,46 @@ p.lien-git {
 }
 
 /*---------------------------------------------------------- 
+# Section MediaQuery petite tablette
+----------------------------------------------------------*/
+@media screen and (min-width: 600px) {
+    :root {
+        --title: 25px;
+        --desc: 14px;
+    }
+
+    .nav-link {
+        font-size: 1.2em;
+    }
+
+    .category__container {
+        width: 50%;
+    }
+    
+    .buttonProject {
+        width: 70%;
+    }
+
+    .card {
+        height: 35vh;
+    }
+
+    .card__img {
+        height: 70%;
+    }
+
+    .card__img__child {
+        height: unset;
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+
+    .card__text {
+        height: 30%;
+    }
+}
+
+/*---------------------------------------------------------- 
 # Section MediaQuery tablette
 ----------------------------------------------------------*/
 @media screen and (min-width: 800px) {
@@ -556,6 +615,13 @@ p.lien-git {
         justify-content: space-between;
         width: 25%;
     }
+
+    .contact__item__container {
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+    }
+
     .buttonProject {
         font-size: var(--text);
         width: 50%;
@@ -564,7 +630,7 @@ p.lien-git {
     .aboutMeTitle {
         font-size: var(--title);
     }
-    
+
     .aboutMeDesc {
         font-size: var(--text);
     }
@@ -575,8 +641,9 @@ p.lien-git {
         flex-wrap: wrap;
         justify-content: center;
     }
-    
-    .UnityProjects, .WebProjects {
+
+    .UnityProjects,
+    .WebProjects {
         width: 70%;
         display: flex;
         flex-wrap: wrap;
@@ -587,18 +654,22 @@ p.lien-git {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80%;
+        width: 60%;
         height: 35vh;
         margin-bottom: 4%;
     }
-    
+
     .card__img {
         width: 100%;
         height: 60%;
-        background-size: cover;
-        background-position: 50% 50%;
     }
-    
+
+    .card__img__child {
+        height: unset;
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+
     .card__text {
         height: 40%;
         text-align: center;
@@ -607,7 +678,10 @@ p.lien-git {
         font-size: var(--desc);
     }
 
-    .project__desc, .project__desc2, .project__desc3, .project__desc4 {
+    .project__desc,
+    .project__desc2,
+    .project__desc3,
+    .project__desc4 {
         font-size: var(--text);
     }
 
@@ -621,7 +695,8 @@ p.lien-git {
         width: 40%;
     }
 
-    .footerGitAccount, .footerGitRepo {
+    .footerGitAccount,
+    .footerGitRepo {
         width: 30%;
         display: inline-block;
         font-size: var(--title);
@@ -644,6 +719,33 @@ p.lien-git {
     .contact__item {
         font-size: var(--title);
     }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        height: 35vh;
+        margin-bottom: 4%;
+    }
+
+    .card__img {
+        width: 100%;
+        height: 70%;
+    }
+
+    .card__img__child {
+        height: initial;
+        width: 100%;
+    }
+
+    .card__text {
+        height: 30%;
+        text-align: center;
+        padding: 2%;
+        font-family: 'desc';
+        font-size: var(--desc);
+    }
 }
 
 /*---------------------------------------------------------- 
@@ -651,26 +753,32 @@ p.lien-git {
 ----------------------------------------------------------*/
 @media screen and (min-width: 1500px) {
     .projets .swiper {
-        height: 90vh;
+        width: 90%;
+        height: 70vh;
         border-radius: 10px;
     }
+
     .navLinkContainer {
         display: flex;
         justify-content: space-between;
         width: 15%;
     }
-    .UnityProjects, .WebProjects {
+
+    .UnityProjects,
+    .WebProjects {
         width: 50%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
+
     .triDProjects {
         width: 50%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
+
     .card {
         display: flex;
         flex-direction: column;
@@ -678,12 +786,18 @@ p.lien-git {
         width: 40%;
         height: 30vh;
     }
+
     .card__img {
         width: 100%;
         height: 70%;
-        background-size: cover;
-        background-position: 50% 0;
     }
+
+    .card__img__child {
+        height: unset;
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+
     .card__text {
         height: 30%;
         text-align: center;

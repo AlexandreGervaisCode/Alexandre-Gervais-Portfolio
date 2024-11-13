@@ -31,8 +31,9 @@ const projectObj = {
     titre: `Forge Médiévale - 3D`,
     description: `Terminé le 15 Novembre 2023, Ceci est une scène 3D qui vise à reproduire un style <b>réalistique</b> sur un lieu du passé.<br>Réalisé dans le cadre du cours "<b>Modélisation 3D</b>" par Alexandre Gervais, Ian Corbin, Samuel Desmeules-Voyer et Keven Malric, chaque membre de l'équipe ont produit au moins 3 éléments 3D uniques à la scène. Ce projet à été réalisé avec <b>AutoDesk Maya</b> et <b>Arnold</b>.`,
     image: "../assets/media/images/forgeMedievale.jpg",
-    description2: `Tout d'abord, notre <b>équipe</b> à commencée en discutant à propos d'un environnement 3D qui serait <b>intéressant</b>, <b>unique</b> et <b>réalistique</b>. Le thème qu'on a choisi était une forge des temps médievaux. Pour avoir une idée des objets qu'on allait devoir modéliser et d'avoir un aperçu de référence du produit final, j'ai fait cette <b>esquisse</b> ci-dessous.`,
+    description2: `Tout d'abord, notre <b>équipe</b> à commencée en discutant à propos d'un environnement 3D qui serait <b>intéressant</b>, <b>unique</b> et <b>réalistique</b>. Le thème qu'on a choisi était une forge des temps médievaux. Pour avoir une idée des objets qu'on allait devoir modéliser et d'avoir un aperçu de référence du produit final, j'ai fait cette <b>esquisse</b> ci-dessous et on a réalisé en équipe ce <b>moodboard</b>.`,
     image2: "../assets/media/images/forgeMedievaleEsquisse.jpg",
+    imageMoodboard: "../assets/media/images/forgeMedievaleMoodboard.jpg",
     description3: `Ensuite, on a choisi en équipe qui fera quel asset. J'ai choisi de m'occuper du barril avec des plans, d'un sac, du charbon et des fenêtre. La modélisation et les matériaux sont entièrement fait par moi, mais les textures viennent d'un site web qui offrent des textures libre de droit.`,
     image3: "../assets/media/images/forgeMedievaleAssets.jpg",
     description4: `Finalement, je me suis occupé de <b>remplir</b> la scène en ajoutant les murs, le plafond, le sol, des accessoires de plus comme un teneur d'armes et j'ai placer chaque objet fait par mon équipe dans la scène pour <b>reproduire</b> l'esquisse. Ian Corbin s'est occupé des lumières pour nous offrir les <b>rendus finaux</b> ci-dessous.`,
@@ -50,6 +51,7 @@ const projectObj = {
     image5: false,
     image4: false,
     image2: false,
+    imageMoodboard: false,
     image3: false,
     video: "https://www.youtube.com/embed/JqnhCMl64_w?si=Q0iur_i_eQhaac77"
   },
@@ -63,6 +65,7 @@ const projectObj = {
     image5: false,
     image4: false,
     image2: false,
+    imageMoodboard: false,
     image3: false,
     video: "https://www.youtube.com/embed/HkR0GhxXz2g?si=FNIV8E41-tdmVw5g"
   },
@@ -77,6 +80,7 @@ const projectObj = {
     image5: false,
     image4: false,
     image3: false,
+    imageMoodboard: false,
     video: false
   },
   ghostlyBusiness: {
@@ -89,6 +93,7 @@ const projectObj = {
     image5: false,
     image4: false,
     image2: false,
+    imageMoodboard: false,
     image3: false,
     video: "https://marexillius.github.io/GhostlyBusiness/"
   },
@@ -102,6 +107,7 @@ const projectObj = {
     image5: false,
     image4: false,
     image2: false,
+    imageMoodboard: false,
     image3: false,
     video: "https://www.youtube.com/embed/EPQ-KbnGg4M?si=8wWj7WBylR8-x83K"
   },
@@ -115,6 +121,7 @@ const projectObj = {
     image5: false,
     image4: false,
     image2: false,
+    imageMoodboard: false,
     image3: false,
     video: "https://www.youtube.com/embed/Xaja_G7eDxo?si=Bxk1MDPyrba4NagU"
   },
@@ -128,6 +135,7 @@ const projectObj = {
     image5: false,
     image4: false,
     image2: false,
+    imageMoodboard: false,
     image3: false,
     video: "https://www.youtube.com/embed/VQlTT4ovDFE?si=733e2_mckwA8-HnJ"
   },
@@ -148,6 +156,7 @@ function loadProject(projectName) {
   let projectImg = document.querySelector(".project__img");
   let projectFrame = document.querySelector(".project__frame");
   let projectImg2 = document.querySelector(".project__img2");
+  let projectImgMoodboard = document.querySelector(".project__moodboard");
   let projectImg3 = document.querySelector(".project__img3");
   let projectDesc2 = document.querySelector(".project__desc2");
   let projectDesc3 = document.querySelector(".project__desc3");
@@ -178,6 +187,12 @@ function loadProject(projectName) {
     projectImg2.classList.remove('hidden');
   } else {
     projectImg2.classList.add('hidden');
+  }
+  if (selectedProject.imageMoodboard !== false) {
+    projectImgMoodboard.src = selectedProject.imageMoodboard;
+    projectImgMoodboard.classList.remove('hidden');
+  } else {
+    projectImgMoodboard.classList.add('hidden');
   }
   if (selectedProject.image3 !== false) {
     projectImg3.src = selectedProject.image3;
