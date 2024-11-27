@@ -30,15 +30,15 @@ const projectObj = {
   forgeMedievale: {
     titre: `Forge Médiévale - 3D`,
     description: `Terminé le 15 Novembre 2023, Ceci est une scène 3D qui vise à reproduire un style <b>réalistique</b> sur un lieu du passé.<br>Réalisé dans le cadre du cours "<b>Modélisation 3D</b>" par Alexandre Gervais, Ian Corbin, Samuel Desmeules-Voyer et Keven Malric, chaque membre de l'équipe ont produit au moins 3 éléments 3D uniques à la scène. Ce projet à été réalisé avec <b>AutoDesk Maya</b> et <b>Arnold</b>.`,
-    image: "../assets/media/images/forgeMedievale.jpg",
+    image: "../assets/media/images/forgeMedievale.webp",
     description2: `Tout d'abord, notre <b>équipe</b> à commencée en discutant à propos d'un environnement 3D qui serait <b>intéressant</b>, <b>unique</b> et <b>réalistique</b>. Le thème qu'on a choisi était une forge des temps médievaux. Pour avoir une idée des objets qu'on allait devoir modéliser et d'avoir un aperçu de référence du produit final, j'ai fait cette <b>esquisse</b> ci-dessous et on a réalisé en équipe ce <b>moodboard</b>.`,
-    image2: "../assets/media/images/forgeMedievaleEsquisse.jpg",
-    imageMoodboard: "../assets/media/images/forgeMedievaleMoodboard.jpg",
+    image2: "../assets/media/images/forgeMedievaleEsquisse.webp",
+    imageMoodboard: "../assets/media/images/forgeMedievaleMoodboard.webp",
     description3: `Ensuite, on a choisi en équipe qui fera quel asset. J'ai choisi de m'occuper du barril avec des plans, d'un sac, du charbon et des fenêtre. La modélisation et les matériaux sont entièrement fait par moi, mais les textures viennent d'un site web qui offrent des textures libre de droit.`,
-    image3: "../assets/media/images/forgeMedievaleAssets.jpg",
+    image3: "../assets/media/images/forgeMedievaleAssets.webp",
     description4: `Finalement, je me suis occupé de <b>remplir</b> la scène en ajoutant les murs, le plafond, le sol, des accessoires de plus comme un teneur d'armes et j'ai placer chaque objet fait par mon équipe dans la scène pour <b>reproduire</b> l'esquisse. Ian Corbin s'est occupé des lumières pour nous offrir les <b>rendus finaux</b> ci-dessous.`,
-    image4: "../assets/media/images/forgeMedievale1.jpg",
-    image5: "../assets/media/images/forgeMedievale2.jpg",
+    image4: "../assets/media/images/forgeMedievale1.webp",
+    image5: "../assets/media/images/forgeMedievale2.webp",
     video: false
   },
   eruptionFatale: {
@@ -72,8 +72,8 @@ const projectObj = {
   queteRichesse: {
     titre: `Quête des Richesses - AR Unity`,
     description: `Terminé le 24 Septembre 2024, Quête des Richesses est une application mobile de <b>Réalité Augmentée (AR)</b> pour Android qui permet, avec la caméra du téléphone, de faire apparaître un coffre au trésor et une pièce d'or quand une carte de pirate est captée par la caméra.<br><br>La conceptualisation, la réalisation, la production des médias visuels et sonores et la programmation ont été réalisés par moi dans le cadre du cours "<b>Réalité Virtuelle</b>". Ce projet à été réalisé avec <b>Unity</b>.`,
-    image: "../assets/media/images/queteRichesses.jpg",
-    image2: "../assets/media/images/queteRichesse2.jpg",
+    image: "../assets/media/images/queteRichesses.webp",
+    image2: "../assets/media/images/queteRichesse2.webp",
     description2: false,
     description3: false,
     description4: false,
