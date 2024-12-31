@@ -29,7 +29,7 @@ let swiper = new Swiper(".swiper-screenshots", {
 const projectObj = {
   forgeMedievale: {
     titre: `Forge Médiévale - 3D`,
-    description: `Terminé le 15 Novembre 2023, Ceci est une scène 3D qui vise à reproduire un style <b>réalistique</b> sur un lieu du passé.<br>Réalisé dans le cadre du cours "<b>Modélisation 3D</b>" par Alexandre Gervais, Ian Corbin, Samuel Desmeules-Voyer et Keven Malric, chaque membre de l'équipe ont produit au moins 3 éléments 3D uniques à la scène. Ce projet à été réalisé avec <b>AutoDesk Maya</b> et <b>Arnold</b>.`,
+    description: `Terminé le 15 Novembre 2023, Ceci est une scène 3D qui vise à reproduire un style <b>réalistique</b> sur un lieu du passé.<br>Réalisé dans le cadre du cours "<b>Modélisation 3D</b>" par Alexandre Gervais, <a href="https://ianqc.github.io/Corbin_Ian_Portfolio/" class="lien-git" target="_blank">Ian Corbin</a>, <a href="https://samesthumain.github.io" class="lien-git" target="_blank">Samuel Desmeules-Voyer</a> et Keven Malric, chaque membre de l'équipe ont produit au moins 3 éléments 3D uniques à la scène. Ce projet à été réalisé avec <b>AutoDesk Maya</b> et <b>Arnold</b>.`,
     image: "../assets/media/images/forgeMedievale.webp",
     description2: `Tout d'abord, notre <b>équipe</b> à commencée en discutant à propos d'un environnement 3D qui serait <b>intéressant</b>, <b>unique</b> et <b>réalistique</b>. Le thème qu'on a choisi était une forge des temps médievaux. Pour avoir une idée des objets qu'on allait devoir modéliser et d'avoir un aperçu de référence du produit final, j'ai fait cette <b>esquisse</b> ci-dessous et on a réalisé en équipe ce <b>moodboard</b>.`,
     image2: "../assets/media/images/forgeMedievaleEsquisse.webp",
@@ -83,33 +83,33 @@ const projectObj = {
     imageMoodboard: false,
     video: false
   },
-  ghostlyBusiness: {
-    titre: `Ghostly Business - Web`,
-    description: `Terminé le 4 Décembre 2023, Ghostly Business est un <b>jeu web</b> qui consiste à prendre des décisions face à un problème présenté.<br><br>Ce projet fut conceptualisé, réalisé et programmé en JavaScript dans le cadre du cours "<b>Développement Web</b>". Les médias visuels ont été assemblés par moi, mais pas réalisés.`,
+  reversGalactique: {
+    titre: `Revers Galactique - Jeu Réalité Virtuelle`,
+    description: `Terminé le 9 Décembre 2024, Revers Galactique est un court jeu réalisé dans une équipe de 4 personnes. Revers Galactique utilise de la <b>réalité virtuelle</b> pour amenez l'utilisateur à bouger pour attaquer des aliens d'une façon unique, avec une raquette et une balle.`,
     image: false,
-    description2: false,
-    description3: false,
-    description4: false,
+    description2: `Mon <b></b>rôle dans l'équipe était de <b>programmer</b> les ennemies retrouvés au travers du jeu et certains méchaniques du joueur, faire certains <b>modèles 3D</b> (la raquette, la balle et les tables), faire de <b>l'optimisation</b> pour améliorer les performances, le logo du jeu, création et montage sonore et <b>tester</b> le jeu en réalité virtuelle.`,
+    description3: `Ce projet fut réalisé dans le cadre du cours "<b>Réalité Virtuelle</b>". Les musiques sont des assemblages de divers pistes d'audio retrouvées sur Pixabay.`,
+    description4: `Mon équipe constituait de <a href="https://madkingside.github.io" class="lien-git" target="_blank">Jérémy Roy-Côté (Programmeur et assembleur de scène)</a>, <a href="https://michaelu-d.github.io/portfolio/" class="lien-git" target="_blank">Michaël Un Dupré (assembleur technique)</a> et <a href="https://samesthumain.github.io" class="lien-git" target="_blank">Samuel Desmeules-Voyer (modélisateur 3D et animateur 3D)</a>`,
     image5: false,
     image4: false,
     image2: false,
     imageMoodboard: false,
     image3: false,
-    video: "https://marexillius.github.io/GhostlyBusiness/"
+    video: "https://www.youtube.com/embed/9ajk2JWfa_M?si=Oo4b8h7NSFBvbb2u"
   },
-  voyageUnique: {
-    titre: `Voyage Unique - Web`,
-    description: `Terminé le 13 Mai 2024, Voyage Unique est une histoire "<b>Scrollytelling</b>" web affichée avec des animations programmées en JavaScript à l'aide des librairies <b>GSAP</b>.<br><br>La conceptualisation, programmation, réalisation des médias et la production ont été réalisées dans le cadre du cours "<b>Optimisation Web</b>" par moi.`,
+  pyramideGuyse: {
+    titre: `Pyramide de Guyse - OSC Arduino et Unity`,
+    description: `Terminé le 12 Décembre 2024, Pyramide de Guyse est jeu d'évasion (plus fréquemment appelé "Escape Game") réalisé dans une équipe de 3 personnes. Pyramide de Guyse utilise des arduinos pour communiquer directement avec notre jeu réalisé avec Unity pour progresser. L'utilisateur est amené à résoudre des égnimes en utilisant la boîte devant lui.`,
     image: false,
-    description2: false,
-    description3: false,
+    image2: false,
+    description2: `L'assemblage de la scène Unity, l'audio, les animations, le logo et l'assemblage de la boîte ont été réalisés par moi dans le cadre du cours "<b>Espace Intéractif</b>". Ce projet à été réalisé avec <b>Unity</b> et <b>Arduino IDE</b>.`,
+    description3: `Mon équipe constituait de <a href="https://madkingside.github.io" class="lien-git" target="_blank">Jérémy Roy-Côté (Programmeur)</a> et <a href="https://ianqc.github.io/Corbin_Ian_Portfolio/" class="lien-git" target="_blank">Ian Corbin (Concepteur et assembleur technique)</a>`,
     description4: false,
     image5: false,
     image4: false,
-    image2: false,
-    imageMoodboard: false,
     image3: false,
-    video: "https://www.youtube.com/embed/EPQ-KbnGg4M?si=8wWj7WBylR8-x83K"
+    imageMoodboard: false,
+    video: "https://www.youtube.com/embed/HkR0GhxXz2g?si=FNIV8E41-tdmVw5g"
   },
   pixarBanana: {
     titre: `Banane Pixar - 3D`,
@@ -167,13 +167,6 @@ function loadProject(projectName) {
   // Give project info
   projectTitle.textContent = selectedProject.titre;
   projectDesc.innerHTML = selectedProject.description;
-
-  // Check if it's not a frame video
-  if (selectedProject.titre === `Ghostly Business - Web`) {
-    projectFrame.classList.add("frameGame");
-  } else {
-    projectFrame.classList.remove("frameGame");
-  }
 
   // Adds the info if the project has it
   if (selectedProject.image !== false) {
@@ -241,7 +234,7 @@ function loadProject(projectName) {
 
 // Get all project, then assigns the matching object 
 const allProjects = document.querySelectorAll(".project");
-const projectArr = ["forgeMedievale", "eruptionFatale", "scopophobia", "queteRichesse", "ghostlyBusiness", "voyageUnique", "pixarBanana", "portalSides"];
+const projectArr = ["forgeMedievale", "eruptionFatale", "scopophobia", "queteRichesse", "pyramideGuyse", "reversGalactique", "pixarBanana", "portalSides"];
 
 allProjects.forEach(element => {
   element.addEventListener("click", function () {
@@ -258,26 +251,17 @@ allProjects.forEach(element => {
 const allButtonCategory = document.querySelectorAll(".categoryButton");
 const tridimensionProjects = document.querySelector(".triDProjects");
 const unityProjects = document.querySelector(".UnityProjects");
-const webProjects = document.querySelector(".WebProjects");
 allButtonCategory.forEach(category => {
   category.addEventListener("click", function () {
     // 3 D
     if (category.classList.contains("3d")) {
       tridimensionProjects.classList.remove("hidden");
       unityProjects.classList.add("hidden");
-      webProjects.classList.add("hidden");
     } 
     // U N I T Y
     else if (category.classList.contains("unity")) {
       tridimensionProjects.classList.add("hidden");
       unityProjects.classList.remove("hidden");
-      webProjects.classList.add("hidden");
-    } 
-    // W E B
-    else if (category.classList.contains("web")) {
-      tridimensionProjects.classList.add("hidden");
-      unityProjects.classList.add("hidden");
-      webProjects.classList.remove("hidden");
     } 
   })
 });
@@ -300,11 +284,11 @@ switch(projectClicked) {
   case "queteRichesse":
     projectSelected = projectObj.queteRichesse;
     break;
-  case "ghostlyBusiness":
-    projectSelected = projectObj.ghostlyBusiness;
+  case "pyramideGuise":
+    projectSelected = projectObj.pyramideGuyse;
     break;
-  case "voyageUnique":
-    projectSelected = projectObj.voyageUnique;
+  case "reversGalactique":
+    projectSelected = projectObj.reversGalactique;
     break;
   case "pixarBanana":
     projectSelected = projectObj.pixarBanana;
