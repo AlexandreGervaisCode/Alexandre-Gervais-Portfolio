@@ -109,7 +109,7 @@ const projectObj = {
     image4: false,
     image3: false,
     imageMoodboard: false,
-    video: "https://www.youtube.com/embed/HkR0GhxXz2g?si=FNIV8E41-tdmVw5g"
+    video: "https://www.youtube.com/embed/4Ni9tZ1piYI?si=1rxrv6bAf95Vcp6M"
   },
   pixarBanana: {
     titre: `Banane Pixar - 3D`,
