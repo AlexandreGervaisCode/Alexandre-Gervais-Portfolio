@@ -102,7 +102,7 @@ const projectObj = {
     description: `Terminé le 12 Décembre 2024, Pyramide de Guyse est <b>jeu d'évasion</b> (plus fréquemment appelé "Escape Game") réalisé dans une équipe de 3 personnes. Pyramide de Guyse utilise des <b>arduinos</b> pour communiquer directement avec notre jeu réalisé avec Unity pour progresser. L'utilisateur est amené à résoudre des <b>égnimes</b> en utilisant la boîte devant lui.`,
     image: false,
     image2: false,
-    description2: `L'assemblage de la scène Unity, l'audio, les animations, le logo et l'assemblage de la boîte ont été réalisés par moi dans le cadre du cours "<b>Espace Intéractif</b>". Ce projet à été réalisé avec <b>Unity</b> et <b>Arduino IDE</b>.`,
+    description2: `L'assemblage de la scène Unity, l'audio, les animations, le logo et l'assemblage de la boîte ont été réalisés par moi dans le cadre du cours "<b>Espace Interactif</b>". Ce projet à été réalisé avec <b>Unity</b> et <b>Arduino IDE</b>.`,
     description3: `Mon équipe constituait de <a href="https://madkingside.github.io" class="lien-git" target="_blank">Jérémy Roy-Côté (Programmeur)</a> et <a href="https://ianqc.github.io/Corbin_Ian_Portfolio/" class="lien-git" target="_blank">Ian Corbin (Concepteur et assembleur technique)</a>`,
     description4: false,
     image5: false,
