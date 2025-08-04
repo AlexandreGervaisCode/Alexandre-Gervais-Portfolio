@@ -55,7 +55,7 @@ const projectObj = {
     image3: false,
     video: "https://www.youtube.com/embed/JqnhCMl64_w?si=Q0iur_i_eQhaac77"
   },
-  scopophobia: {
+  /*scopophobia: {
     titre: `Scopophobia - Jeu Unity`,
     description: `Terminé le 15 Octobre 2024, Scopophobia est un court <b>jeu</b> qui possède une ambiance horrifique et inquiétante réalisé dans le cadre du cours "<b>Réalité Virtuelle</b>". Le but est de trouver et collecter tout les os dans cet environnement urbain nocturnal grâce à votre lampe de poche.<br><br>La conceptualisation, la programmation et la stucture de l'environnement ont été réalisés par moi. Les modèles 3D sont pris d'un pack d'assets offert aux comptes étudiants par <b>Unity</b> et les sources audio proviennent de Pixabay.`,
     image: false,
@@ -68,6 +68,20 @@ const projectObj = {
     imageMoodboard: false,
     image3: false,
     video: "https://www.youtube.com/embed/HkR0GhxXz2g?si=FNIV8E41-tdmVw5g"
+  },*/
+  c0ndu8: {
+    titre: `C0N DU8 - Expérience Multimédia Unity`,
+    description: `Exposé du 17 au 21 Mars 2025 au Collège Montmorency, C0N DU8 est une <b>expérience multimédia</b> qui amène l'utilisateur à complèter des courses avec un <b>vélo stationnaire</b>.`,
+    image: false,
+    description2: `Cette expérience est composé de divers objets <b>OSC</b> (tel qu'un <b>voltmètre</b> et une <b>Kinect</b>) qui servent à calculer la vitesse à laquelle l'utilisateur pédale et s'il se penche à droite ou à gauche. Ensuite, ces données sont transferées vers Unity pour donner que l'utilisateur utilise le vélo ainsi que son corps pour gagner les <b>courses à endurance</b> dans le jeu.`,
+    description3: `Pour commencer, j'étais un des <b>concepteurs de l'expérience</b>, amenant divers aspects au projet tel que le thème de chaque niveau, la palette de couleur et les objets. Ensuite, mon rôle dans l'équipe était <b>programmeur des méchaniques de jeu</b> (comme les physiques du personnage) puis j'ai fait la conception, création de média et programmation de tout les éléments de l'<b>interface utilisateur</b> (UI) ainsi que l'<b>expérience utilisateur</b> (UX). Finalement, j'ai fait le <b>montage vidéo</b> de la vidéo d'intention et du "Making Of" de notre projet`,
+    description4: `Tout les médias utilisés (visuels, audio, etc) ont été créer par diver membres de notre équipe dans le cadre du cours "expérience multimédia interactive".`,
+    image5: "../assets/media/images/c0ndu8UserView.webp",
+    image4: "../assets/media/images/c0ndu8.webp",
+    image2: "../assets/media/images/c0ndu8UserView.webp",
+    imageMoodboard: "../assets/media/images/c0ndu8UI.webp",
+    image3: "../assets/media/images/c0ndu8ItemsConcept.webp",
+    video: "https://gearshift-games.github.io/Web-C0N-DU8/#"
   },
   queteRichesse: {
     titre: `Quête des Richesses - AR Unity`,
@@ -234,7 +248,7 @@ function loadProject(projectName) {
 
 // Get all project, then assigns the matching object 
 const allProjects = document.querySelectorAll(".project");
-const projectArr = ["forgeMedievale", "eruptionFatale", "scopophobia", "queteRichesse", "pyramideGuyse", "reversGalactique", "pixarBanana", "portalSides"];
+const projectArr = ["forgeMedievale", "eruptionFatale", "c0ndu8", "queteRichesse", "pyramideGuyse", "reversGalactique", "pixarBanana", "portalSides"];
 
 allProjects.forEach(element => {
   element.addEventListener("click", function () {
@@ -278,8 +292,8 @@ switch(projectClicked) {
   case "eruptionFatale":
     projectSelected = projectObj.eruptionFatale;
     break;
-  case "scopophobia":
-    projectSelected = projectObj.scopophobia;
+  case "c0ndu8":
+    projectSelected = projectObj.c0ndu8;
     break;
   case "queteRichesse":
     projectSelected = projectObj.queteRichesse;
