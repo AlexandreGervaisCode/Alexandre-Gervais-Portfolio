@@ -64,6 +64,10 @@ a:hover {
     font-family: "title";
 }
 
+.hidden {
+    display: none;
+}
+
 h1 {
     font-family: "title";
 }
