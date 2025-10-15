@@ -39,20 +39,10 @@ const projectObj = {
     description4: `Finalement, je me suis occupé de <b>remplir</b> la scène en ajoutant les murs, le plafond, le sol, des accessoires de plus comme un teneur d'armes et j'ai placer chaque objet fait par mon équipe dans la scène pour <b>reproduire</b> l'esquisse. Ian Corbin s'est occupé des lumières pour nous offrir les <b>rendus finaux</b> ci-dessous.`,
     image4: "../assets/media/images/forgeMedievale1.webp",
     image5: "../assets/media/images/forgeMedievale2.webp",
-    video: false
   },
   eruptionFatale: {
     titre: `Éruption Fatale - 3D, Sonore`,
     description: `Terminé le 5 Mai 2024, Éruption Fatale est un environnement fantastique d'une plage déserte qui est sur une île volcanique sur le point d'entrer en éruption. Ce projet à été réalisé dans le cadre des cours "<b>Animation 3D</b>" et "<b>Conception Sonore Interactive</b>".<br><br>Ceci est le <b>gagnant</b> du Prix "Coup de Coeur" du concours "Essais Audiovisuels" 2024.<br><br>Ce projet dans le style low poly à été <b>entièrement</b> conceptualisé, modelé, animé et monté par moi, incluant la production des pistes sonores. Le but de ce projet était d'essayer quelque chose de différent que le style réalistique qui devient plus typique. Ce projet à été réalisé avec <b>Autodesk Maya</b> et <b>Arnold</b>, <b>Reaper</b> et <b>DaVinci</b>.`,
-    image: false,
-    description2: false,
-    description3: false,
-    description4: false,
-    image5: false,
-    image4: false,
-    image2: false,
-    imageMoodboard: false,
-    image3: false,
     video: "https://www.youtube.com/embed/JqnhCMl64_w?si=Q0iur_i_eQhaac77"
   },
   /*scopophobia: {
@@ -72,7 +62,6 @@ const projectObj = {
   c0ndu8: {
     titre: `C0N DU8 - Expérience Multimédia Unity`,
     description: `Exposé du 17 au 21 Mars 2025 au Collège Montmorency, C0N DU8 est une <b>expérience multimédia</b> qui amène l'utilisateur à complèter des courses avec un <b>vélo stationnaire</b>.`,
-    image: false,
     description2: `Cette expérience est composé de divers objets <b>OSC</b> (tel qu'un <b>voltmètre</b> et une <b>Kinect</b>) qui servent à calculer la vitesse à laquelle l'utilisateur pédale et s'il se penche à droite ou à gauche. Ensuite, ces données sont transferées vers Unity pour donner que l'utilisateur utilise le vélo ainsi que son corps pour gagner les <b>courses à endurance</b> dans le jeu.`,
     description3: `Pour commencer, j'étais un des <b>concepteurs de l'expérience</b>, amenant divers aspects au projet tel que le thème de chaque niveau, la palette de couleur et les objets. Ensuite, mon rôle dans l'équipe était <b>programmeur des méchaniques de jeu</b> (comme les physiques du personnage) puis j'ai fait la conception, création de média et programmation de tout les éléments de l'<b>interface utilisateur</b> (UI) ainsi que l'<b>expérience utilisateur</b> (UX). Finalement, j'ai fait le <b>montage vidéo</b> de la vidéo d'intention et du "Making Of" de notre projet`,
     description4: `Tout les médias utilisés (visuels, audio, etc) ont été créer par diver membres de notre équipe dans le cadre du cours "expérience multimédia interactive".`,
@@ -88,69 +77,30 @@ const projectObj = {
     description: `Terminé le 24 Septembre 2024, Quête des Richesses est une application mobile de <b>Réalité Augmentée (AR)</b> pour Android qui permet, avec la caméra du téléphone, de faire apparaître un coffre au trésor et une pièce d'or quand une carte de pirate est captée par la caméra.<br><br>La conceptualisation, la réalisation, la production des médias visuels et sonores et la programmation ont été réalisés par moi dans le cadre du cours "<b>Réalité Virtuelle</b>". Ce projet à été réalisé avec <b>Unity</b>.`,
     image: "../assets/media/images/queteRichesses.webp",
     image2: "../assets/media/images/queteRichesse2.webp",
-    description2: false,
-    description3: false,
-    description4: false,
-    image5: false,
-    image4: false,
-    image3: false,
-    imageMoodboard: false,
-    video: false
   },
   reversGalactique: {
     titre: `Revers Galactique - Jeu Réalité Virtuelle`,
     description: `Terminé le 9 Décembre 2024, Revers Galactique est un court jeu réalisé dans une équipe de 4 personnes. Revers Galactique utilise de la <b>réalité virtuelle</b> pour amenez l'utilisateur à bouger pour attaquer des aliens d'une façon unique, avec une raquette et une balle.`,
-    image: false,
     description2: `Mon <b></b>rôle dans l'équipe était de <b>programmer</b> les ennemies retrouvés au travers du jeu et certains méchaniques du joueur, faire certains <b>modèles 3D</b> (la raquette, la balle et les tables), faire de <b>l'optimisation</b> pour améliorer les performances, le logo du jeu, création et montage sonore et <b>tester</b> le jeu en réalité virtuelle.`,
     description3: `Ce projet fut réalisé dans le cadre du cours "<b>Réalité Virtuelle</b>". Les musiques sont des assemblages de divers pistes d'audio retrouvées sur Pixabay.`,
     description4: `Mon équipe constituait de <a href="https://madkingside.github.io" class="lien-git" target="_blank">Jérémy Roy-Côté (Programmeur et assembleur de scène)</a>, <a href="https://michaelu-d.github.io/portfolio/" class="lien-git" target="_blank">Michaël Un Dupré (assembleur technique)</a> et <a href="https://samesthumain.github.io" class="lien-git" target="_blank">Samuel Desmeules-Voyer (modélisateur 3D et animateur 3D)</a>`,
-    image5: false,
-    image4: false,
-    image2: false,
-    imageMoodboard: false,
-    image3: false,
     video: "https://www.youtube.com/embed/9ajk2JWfa_M?si=Oo4b8h7NSFBvbb2u"
   },
   pyramideGuyse: {
     titre: `Pyramide de Guyse - OSC Arduino et Unity`,
     description: `Terminé le 12 Décembre 2024, Pyramide de Guyse est <b>jeu d'évasion</b> (plus fréquemment appelé "Escape Game") réalisé dans une équipe de 3 personnes. Pyramide de Guyse utilise des <b>arduinos</b> pour communiquer directement avec notre jeu réalisé avec Unity pour progresser. L'utilisateur est amené à résoudre des <b>égnimes</b> en utilisant la boîte devant lui.`,
-    image: false,
-    image2: false,
     description2: `L'assemblage de la scène Unity, l'audio, les animations, le logo et l'assemblage de la boîte ont été réalisés par moi dans le cadre du cours "<b>Espace Interactif</b>". Ce projet à été réalisé avec <b>Unity</b> et <b>Arduino IDE</b>.`,
     description3: `Mon équipe constituait de <a href="https://madkingside.github.io" class="lien-git" target="_blank">Jérémy Roy-Côté (Programmeur)</a> et <a href="https://ianqc.github.io/Corbin_Ian_Portfolio/" class="lien-git" target="_blank">Ian Corbin (Concepteur et assembleur technique)</a>`,
-    description4: false,
-    image5: false,
-    image4: false,
-    image3: false,
-    imageMoodboard: false,
     video: "https://www.youtube.com/embed/4Ni9tZ1piYI?si=1rxrv6bAf95Vcp6M"
   },
   pixarBanana: {
     titre: `Banane Pixar - 3D`,
     description: `Terminé le 19 Février 2024, Pixar Banana est une courte animation réalisée avec une piste audio pré-existante dans le cadre du cours "<b>Animation 3D</b>".<br><br>L'assemblage de l'environnement, l'animation, et la création de la banane et les lettre ont été réalisés par moi. Ce projet à été réalisé avec <b>AutoDesk Maya</b> et <b>Arnold</b>.`,
-    image: false,
-    description2: false,
-    description3: false,
-    description4: false,
-    image5: false,
-    image4: false,
-    image2: false,
-    imageMoodboard: false,
-    image3: false,
     video: "https://www.youtube.com/embed/Xaja_G7eDxo?si=Bxk1MDPyrba4NagU"
   },
   portalSides: {
     titre: `Portal Sides - 3D`,
     description: `Terminé le 5 Mars 2024, Portal Sides est une courte animation inspirée par le jeu vidéo "<b>Portal</b>". L'animation nous amène dans 2 côtés différents de des portails qui ont une petite animation <b>générative</b>.<br><br>La réalisation, production et conceptualisation ont été réalisées dans le cadre du cours "<b>Animation 3D</b>" par moi. Ce projet à été réalisé avec <b>AutoDesk Maya</b> et <b>Arnold</b>.`,
-    image: false,
-    description2: false,
-    description3: false,
-    description4: false,
-    image5: false,
-    image4: false,
-    image2: false,
-    imageMoodboard: false,
-    image3: false,
     video: "https://www.youtube.com/embed/VQlTT4ovDFE?si=733e2_mckwA8-HnJ"
   },
 };
@@ -183,61 +133,61 @@ function loadProject(projectName) {
   projectDesc.innerHTML = selectedProject.description;
 
   // Adds the info if the project has it
-  if (selectedProject.image !== false) {
+  if (typeof selectedProject.image !== "undefined") {
     projectImg.src = selectedProject.image;
     projectImg.classList.remove('hidden');
   } else {
     projectImg.classList.add('hidden');
   }
-  if (selectedProject.image2 !== false) {
+  if (typeof selectedProject.image2 !== "undefined") {
     projectImg2.src = selectedProject.image2;
     projectImg2.classList.remove('hidden');
   } else {
     projectImg2.classList.add('hidden');
   }
-  if (selectedProject.imageMoodboard !== false) {
+  if (typeof selectedProject.imageMoodboard !== "undefined") {
     projectImgMoodboard.src = selectedProject.imageMoodboard;
     projectImgMoodboard.classList.remove('hidden');
   } else {
     projectImgMoodboard.classList.add('hidden');
   }
-  if (selectedProject.image3 !== false) {
+  if (typeof selectedProject.image3 !== "undefined") {
     projectImg3.src = selectedProject.image3;
     projectImg3.classList.remove('hidden');
   } else {
     projectImg3.classList.add('hidden');
   }
-  if (selectedProject.description2 !== false) {
+  if (typeof selectedProject.description2 !== "undefined") {
     projectDesc2.innerHTML = selectedProject.description2;
     projectDesc2.classList.remove('hidden');
   } else {
     projectDesc2.classList.add('hidden');
   }
-  if (selectedProject.description3 !== false) {
+  if (typeof selectedProject.description3 !== "undefined") {
     projectDesc3.innerHTML = selectedProject.description3;
     projectDesc3.classList.remove('hidden');
   } else {
     projectDesc3.classList.add('hidden');
   }
-  if (selectedProject.description4 !== false) {
+  if (typeof selectedProject.description4 !== "undefined") {
     projectDesc4.innerHTML = selectedProject.description4;
     projectDesc4.classList.remove('hidden');
   } else {
     projectDesc4.classList.add('hidden');
   }
-  if (selectedProject.image4 !== false) {
+  if (typeof selectedProject.image4 !== "undefined") {
     projectImg4.src = selectedProject.image4;
     projectImg4.classList.remove('hidden');
   } else {
     projectImg4.classList.add('hidden');
   }
-  if (selectedProject.image5 !== false) {
+  if (typeof selectedProject.image5 !== "undefined") {
     projectImg5.src = selectedProject.image5;
     projectImg5.classList.remove('hidden');
   } else {
-    projectImg3.classList.add('hidden');
+    projectImg5.classList.add('hidden');
   }
-  if (selectedProject.video !== false) {
+  if (typeof selectedProject.video !== "undefined") {
     projectFrame.src = selectedProject.video;
     projectFrame.classList.remove('hidden');
   } else {
