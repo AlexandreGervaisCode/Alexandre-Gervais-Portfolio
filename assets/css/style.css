@@ -11,7 +11,8 @@
     --alpha: rgba(0, 0, 0, 0);
     --black: #181818;
     --pureBlack: #000;
-    --mainColor: #c53c3c;
+    /*--mainColor: #c53c3c;*/
+    --mainColor: #b05050;
     --mainColorHover: #e26464;
     --mainColorCard: #181818;
     --hoverColor: #eed43f;
@@ -95,7 +96,8 @@ b {
     align-items: center;
     width: 100%;
     padding: 3%;
-    background-image: linear-gradient(to bottom right, #b32f2f, #991818);
+    /*background-image: linear-gradient(to bottom right, #b32f2f, #991818);*/
+    background-image: linear-gradient(to bottom right, #a84747, #6f2727);
 }
 
 .nav-link {
